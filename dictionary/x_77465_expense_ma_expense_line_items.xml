@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Expense Line Items" max_length="40" name="x_77465_expense_ma_expense_line_items" type="collection">
+        <element choice="1" label="Category" mandatory="true" max_length="40" name="category" type="choice">
+            <choice>
+                <element label="Lodgin" sequence="0" value="Lodgin"/>
+                <element label="Travel" sequence="1" value="Travel"/>
+                <element label="Meals" sequence="2" value="Meals"/>
+                <element label="Supplies" sequence="3" value="Supplies"/>
+                <element label="Others" sequence="4" value="Others"/>
+            </choice>
+        </element>
+        <element default="0" label="Cost" mandatory="true" max_length="40" name="cost" type="currency"/>
+        <element label="Date" mandatory="true" max_length="40" name="date" type="glide_date"/>
+        <element label="Expense Report" mandatory="true" max_length="32" name="expense_report" reference="x_77465_expense_ma_expense_report" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Miles Driven" max_length="40" name="miles_driven" type="string"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Reciept" max_length="40" name="reciept" type="user_image"/>
+        <element default="true" label="Reimbursible" max_length="40" name="reimbursible" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="40" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="40" name="u_string_1" type="string"/>
+        <index name="index">
+            <element name="expense_report"/>
+        </index>
+    </element>
+</database>

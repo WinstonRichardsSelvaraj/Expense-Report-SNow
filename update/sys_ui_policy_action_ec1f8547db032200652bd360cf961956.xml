@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>miles_driven</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-17 02:28:26</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ec1f8547db032200652bd360cf961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>miles_driven</sys_name>
+        <sys_package display_value="Expense Management" source="x_77465_expense_ma">c8580543db032200652bd360cf961969</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Expense Management">c8580543db032200652bd360cf961969</sys_scope>
+        <sys_update_name>sys_ui_policy_action_ec1f8547db032200652bd360cf961956</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-17 02:28:26</sys_updated_on>
+        <table>x_77465_expense_ma_expense_line_items</table>
+        <ui_policy display_value="Show Miles Driven only when Category is travel">92be0547db032200652bd360cf961977</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>
